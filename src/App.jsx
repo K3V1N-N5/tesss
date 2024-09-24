@@ -7,6 +7,10 @@ import LandingPage from './LandingPage';
 import KNZPage from './KNZPage';
 import Profile from './list';
 import LinktreePage from "./LinkTree";
+import CreateBlog from "./create";
+import BlogslistView from "./blogslist";
+import BlogView from "./show";
+import BlogEdit from "./edit";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,6 +87,9 @@ function App() {
       <Route path="/list" element={<Profile />} />
       <Route path="/knz" element={<KNZPage/>} />
       <Route path="/link" element={<LinktreePage/>} />
+      <Route path="/Create/" element={<CreateBlog/>}/>
+      <Route path="/show/:id" element={<BlogView/>}/>
+      <Route path="/EditBlog/:id" element={<BlogEdit/>}/>
    </Routes>
     <Footer container className="bg-slate-200">
       <div className="w-full text-center">
