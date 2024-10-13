@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/ai",
+      "destination": "/api/chat-ai"
+    },
+    {
+      "source": "/logout",
+      "destination": "/api/auth/signout"
+    },
+    {
+      "source": "/login",
+      "destination": "/api/auth/signin"
+    }
+  ]
+}
