@@ -86,7 +86,7 @@ function RootApp() {
                       )}
                     </div>
 
-                    <Link to="/" className="flex items-center space-x-2 ms-3 md:ms-5" onClick={handleLinkClick}>
+                    <Link href="/" className="flex items-center space-x-2 ms-3 md:ms-5" onClick={handleLinkClick}>
                       <img src={vinkev} className="h-8" alt="VinKev Logo" /> {/* Logo */}
                       <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-gray-800 dark:text-white">
                         VinKev Craft
@@ -119,10 +119,10 @@ function RootApp() {
                       <Sidebar.Items>
                         <Sidebar.ItemGroup>
                           <Sidebar.Collapse icon={HiOutlineCollection} label="Minecraft">
-                            <Link to="/list" onClick={handleLinkClick}><Sidebar.Item>List</Sidebar.Item></Link>
-                            <Link to="/post/knz-ui" onClick={handleLinkClick}><Sidebar.Item>KNZ UI</Sidebar.Item></Link>
+                            <Link href="/list" onClick={handleLinkClick}><Sidebar.Item>List</Sidebar.Item></Link>
+                            <Link href="/post/knz-ui" onClick={handleLinkClick}><Sidebar.Item>KNZ UI</Sidebar.Item></Link>
                           </Sidebar.Collapse>
-                          <Link to="/link" onClick={handleLinkClick}>
+                          <Link href="/link" onClick={handleLinkClick}>
                             <Sidebar.Item icon={HiOutlineExternalLink}>LinkTree</Sidebar.Item>
                           </Link>
                         </Sidebar.ItemGroup>
@@ -167,4 +167,3 @@ function RootApp() {
 }
 
 export default RootApp;
-  
